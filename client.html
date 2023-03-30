@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Video Stream</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+
+    /* body{
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+
+    }
+
+    .Video{
+
+        width: 50vw;
+        height: 50vh;
+        border: 5px solid greenyellow;
+    } */
+
+</style>
+<body>
+    <!-- <h1>Streaming Humu's Display</h1> -->
+	<div class="Video">
+		<img id="video-stream" src="" alt="Video Stream">
+	</div>
+	<script>
+		var video = document.getElementById("video-stream");
+		video.src = "http://127.0.0.1:5000/camera_feed";
+	</script>
+</body>
+</html>
